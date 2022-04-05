@@ -39,10 +39,21 @@ p {
 /* ============ HEADER =========== */
 
 .container {
+    display: flex;
     width: 1200px;
     align-items: center;
-    padding: 0 15px;
+    padding: 0;
     margin: 0 auto;
+}
+
+.main-text {
+    text-align: center;
+width: 696px;
+height: 120px;
+margin-left: auto;
+margin-right: auto;
+
+
 }
 
 img {
@@ -58,6 +69,7 @@ img {
 
 .header .container {
     display: flex;
+    align-items: center;
 }
 
 .navigation {
@@ -73,10 +85,11 @@ img {
     align-items: center;
 }
 
-.phone-number {
+.mail-address {
     margin-left: auto;
     margin-right: 50px;
 }
+
 
 .navigation-logo{
 font-family: 'Raleway';
@@ -85,7 +98,7 @@ font-size: 26px;
 line-height: 1.192;
 letter-spacing: 0.03em;
 color: var(--main-color);
-margin-left: 215px;
+margin-left:215px;
 margin-right: 93px;
 }
 .nav-link-item,
