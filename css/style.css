@@ -13,6 +13,19 @@ font-family: var(--main-font);
 color:var(--black-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* ============ COMPONENTS =========== */
 .header-logo {
     color: var(--black-color);
@@ -25,6 +38,46 @@ color:var(--black-color);
 
 /* ============ HEADER =========== */
 
+.container {
+    width: 1200px;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+.header .container {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 46px;
+}
+
+.nav-list {
+    display:flex;
+    align-items: center;
+}
+
+.phone-number {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
 .navigation-logo{
 font-family: 'Raleway';
 font-weight: 700;
@@ -32,6 +85,8 @@ font-size: 26px;
 line-height: 1.192;
 letter-spacing: 0.03em;
 color: var(--main-color);
+margin-left: 215px;
+margin-right: 93px;
 }
 .nav-link-item,
 .mail-address {
@@ -40,11 +95,16 @@ color: var(--main-color);
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: var(--black-color);
+    
+    
 }
 
 .phone-number,
 .mail-address {
     color:var(--address-color);
+    display: flex;
+    align-items: center;
+    
 }
 
 .nav-link-item:hover,
@@ -62,6 +122,7 @@ color: var(--main-color);
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: var(--main-color);
+    
 }
 /* ============ END HEADER =========== */
 
