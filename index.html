@@ -22,7 +22,7 @@
                <li class="nav-link">
                    <a class="nav-link-item link" href="portfolio.html">Portfolio</a></li>
                <li class="nav-link">
-                   <a class="nav-link-item link" href="#">Kontakty</a></li>
+                   <a class="nav-link-item link" href="#">Kontakt</a></li>
            </ul>
        </nav> 
         <a class="mail-address link" href="info@devstudio.com">info@devstudio.com</a>
@@ -38,23 +38,23 @@
     <section>
 <div class="main-section">
     <h1 class="main-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
-    <button class="main-button" type="button">Zamów usługe</button>
+    <button class="main-button" type="button">Zamów usługę</button>
 </div>
-<div class="description">
-    <ul>
-        <li>
+<div class="container">
+    <ul class="description-box">
+        <li class="description-list">
             <p class="description-name">LOREM IPSUM</p>
             <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
         </li>
-        <li>
+        <li class="description-list">
             <p class="description-name">LOREM IPSUM</p>
             <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
         </li>
-        <li>
+        <li class="description-list">
             <p class="description-name">LOREM IPSUM</p>
             <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
-        </li>
-        <li>
+        </li >
+        <li class="description-list">
             <p class="description-name">LOREM IPSUM</p>
             <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
         </li>
@@ -66,11 +66,11 @@
 <!-- Czym się zajmujemy -->
 
 
-<section>
+<section class="section">
     <div class="what-we-do">
     <h2 class="second-heading">Czym się zajmujemy</h2>
     </div>
-    <div class="img-what-we-do">
+    <div class="container">
        <ul class="company-work">
            <li class="company-work-list">
                <img class="company-work-img" src="Images/WhatWeDo1.jpg.jpg" alt="Osoba pisze kod" width="370" height="294">
@@ -88,7 +88,8 @@
 
 <!-- Nasz zespół -->
 
-
+<section class="section-gallery">
+    <div class="container">
 <h2 class="second-heading">Nasz zespół</h2>
 <ul class="gallery">
     <li class="gallery-list">
@@ -112,11 +113,15 @@
         <p class="member-stand">UI Designer</p>
     </li>
 </ul>
+</div>
+</section>
 </main>
-<footer>
-<div class="contact-box">
-    <h3>
-        <a class="navigation-logo" href="./index.html">Web<span class="footer-logo">Studio</span></a></h3>
+<footer class="contact-box">
+    <div class="container">
+    <section class="section-footer">
+    <h3 class="footer-heading">
+        <a class="navigation-logo" href="./index.html">Web<span class="footer-logo">Studio</span></a>
+    </h3>
     <address>
         <ul class="contact-list">
             <li class="contact-list-item">
@@ -127,7 +132,8 @@
                 <a class="contact-link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
     </address>
-</div>
+    </section>
+    </div>
 </footer>
 </body>
 </html>

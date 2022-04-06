@@ -1,11 +1,12 @@
 :root {
-    --main-font: font-family: 'Roboto', sans-serif;
+    --main-font: 'Roboto', sans-serif;
     --secondary-font: font-family: 'Raleway', sans-serif;
    --main-color: #2196F3;
    --black-color:#212121;
    --white-color:#FFFFFF;
    --address-color:#757575;
-   --background-section:#2F303A;
+   --description-color:#2F303A;
+   --crew-background: #F5F4FA;
 }
  
 body {
@@ -39,19 +40,19 @@ p {
 /* ============ HEADER =========== */
 
 .container {
-    display: flex;
     width: 1200px;
-    align-items: center;
-    padding: 0;
     margin: 0 auto;
 }
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .main-text {
-    text-align: center;
+display: block;
+text-align: center;
 width: 696px;
 height: 120px;
-margin-left: auto;
-margin-right: auto;
 
 
 }
@@ -72,6 +73,7 @@ img {
     align-items: center;
 }
 
+
 .navigation {
     display: flex;
 }
@@ -90,6 +92,117 @@ img {
     margin-right: 50px;
 }
 
+.main-section {
+    padding: 200px 0 200px 0;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.main-text {
+
+    margin-bottom: 30px;
+    font-size: 44px;
+    display: block;
+    align-items: center;
+}
+
+.main-button  {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border-style: none;
+    border-radius: 4px;
+}
+
+.description {
+    display: block;
+
+}
+
+.company-work{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.company-work-list {
+    list-style-type: none;
+    
+}
+
+.company-work-img {
+    width: 370px;
+    height: 294px;
+    
+}
+
+.section {
+    padding: 94px 0px;
+   
+}
+
+.second-heading {
+    margin-bottom: 50px;
+}
+
+.what-we-do{
+     text-align: center;
+}
+
+.section-gallery {
+     padding: 94px 0px;
+    background-color:var(--crew-background);
+    display:block
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gallery-list {
+    background-color: var(--white-color);
+    list-style-type:none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+ 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    height: 368px
+}
+
+.gallery-list:not(:last-child) {
+    margin-right:30px
+}
+
+.gallery-photo {
+width: 270px;
+height: 260px;
+}
+
+.section-footer {
+    padding: 60px 0 60px;
+}
+
+.contact-list {
+    list-style-type:none;
+}
+
+.contact-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-heading {
+    margin-bottom: 20px;
+}
+
+
 
 .navigation-logo{
 font-family: 'Raleway';
@@ -97,9 +210,10 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.192;
 letter-spacing: 0.03em;
+text-decoration: none;
 color: var(--main-color);
-margin-left:215px;
 margin-right: 93px;
+padding: 24px 0px 25px;
 }
 .nav-link-item,
 .mail-address {
@@ -143,7 +257,7 @@ margin-right: 93px;
 
 .main-section,
 .contact-box {
-    background-color:var(--background-section);
+    background-color:var(--description-color);
 }
 .main-text {
 font-weight: 900;
@@ -156,6 +270,7 @@ color: var(--white-color);
 }
 
 .main-button {
+    display: block;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.875;
@@ -165,6 +280,21 @@ color: var(--white-color);
 cursor: pointer
 }
 
+.description-box {
+    padding-top: 90px;
+    justify-content: space-evenly;
+    flex-basis: calc(100% / 4 -30px);
+    display: flex;
+}
+
+.description-list {
+    list-style-type: none;
+    width: 270px;
+}
+
+.description-name {
+    margin-bottom: 10px;
+}
 
 .description-name{
 font-weight: 700;
@@ -175,11 +305,12 @@ text-transform: uppercase;
 color:var(--black-color);
 }
 .description-text{
+display: block;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
-color: var(--background-section);
+color: var(--address-color);
 }
 
 .second-heading {
@@ -209,7 +340,7 @@ font-size: 16px;
 line-height: 1.187;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--background-section);
+color: var(--description-color);
 }
 /* ============ END CREW =========== */
 
@@ -258,6 +389,8 @@ color:var(--address-color);
 
 
 /* ============ HEADER PORTFOLIO =========== */
+
+
 
 .portfolio-link-item-P {
     color: var(--main-color);
