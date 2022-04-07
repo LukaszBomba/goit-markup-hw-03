@@ -234,16 +234,14 @@ height: 260px;
 }
 
 .img-list {
-    width: 370px;
-    height: 404px;
     list-style-type: none;
-    border: 1px solid #EEEEEE;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
 
 .photo-item {
-    padding-bottom: 20px;
+    width: 370px;
+    height: 294px;
 }
 
 .img-box {
@@ -254,6 +252,13 @@ height: 260px;
 .img-list:not(:last-child) {
     margin-right: 30px;
 }
+
+.text-border {
+    width: 370px;
+    padding: 20px 24px 24px;
+    border: 1px solid #EEEEEE;
+}
+
 
 .img-name {
     width: 322px;
@@ -266,10 +271,6 @@ height: 260px;
     height: 30px;
 }
 
-.img-name,
-.function {
-    margin: 0 20px 0 20px;
-}
 
 .navigation-logo{
 font-family: 'Raleway';
